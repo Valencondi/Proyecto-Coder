@@ -118,19 +118,18 @@ img.gridPortada{
     margin-right: 100px;
 }
 
-h2{
-    color: #e3c16a;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-
 div.padrePersonajes{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     margin: 30px 50px;
     margin-bottom: 300px;
+}
+
+h2{
+    color: #e3c16a;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 div.trailer{
@@ -244,6 +243,7 @@ footer img{
 @media only screen and (max-width: 500px){
     header{
         flex-direction: column;
+        
     }
     header a{
         font-size: medium;
@@ -252,11 +252,59 @@ footer img{
     header img{
         width: 55px;
     }
-    
+    /*main*/
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: medium;
+    }
+    div.grid{
+        margin: 0px;
+        grid-template-columns: 100%;
+
+        grid-template-rows: 600px;
+
+        grid-template-areas: 
+        "portada1"
+        "texto1";
+    }
+    img.gridPortada{
+        height: 400px
+    }
+    .imagen1{
+        height: 0px;
+    }
+    .tituloPersonajes{
+        margin-right: 0px;
+
+    }
+    div.padrePersonajes{
+        text-align: center;
+        display: block;
+        margin: 0px 0px;
+        margin-bottom: 600px;
+        margin-top: 0px;
+    }
+    .personajes{
+        margin-top: 100px;
+        margin-bottom: 200px;
+        height: 0px;
+    }
+
+    .trailerSize{
+        width: 375px;
+        height: 211px;
+    }
+    footer img{
+        height: 30px;
+    }
+    footer h3{
+        font-size: small;
+    }
+    footer h4{
+        font-size: smaller;
+    }
+
+
 }
-
-
-
-
-
-
