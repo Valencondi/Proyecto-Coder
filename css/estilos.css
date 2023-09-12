@@ -1,0 +1,262 @@
+/* Fuente */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi&display=swap');
+/* font-family: 'Noto Serif Vithkuqi', serif; */
+
+/* #F7F7F7
+#e3c16a
+#000000
+#1A1C20 */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Noto Serif Vithkuqi', serif;
+}
+
+html{
+    background-color: #1A1C20;
+}
+
+/* header */
+
+header{
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    width: 23%;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a{
+    font-size: larger;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+header img{
+    width: 100px;
+}
+
+/* main */
+
+h1{
+    margin-top: 40px;
+    text-decoration: underline;
+    color: #e3c16a;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+p{
+    display: flex;
+    color: #F7F7F7;
+    font-size: 1.5rem;
+}
+
+h3{
+    color: #F7F7F7;
+}
+
+h4{
+    color: #F7F7F7;
+}
+
+div.grid{
+    margin-top: 250px;
+    margin-left: 90px;
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    grid-template-rows: 280px 280px ;
+
+    grid-template-areas: 
+    "texto1   portada1"
+    "texto1   portada1";
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+p.gridTexto{
+    grid-area: texto1;
+}
+img.gridPortada{
+    grid-area: portada1;
+    height: 700px;
+}
+.imagen1{
+    height: 800px;
+    text-align: center;
+}
+
+.personajes{
+    height: 400px;
+    margin: 0px 60px;
+}
+
+.tituloPersonajes{
+    text-align: center;
+    margin-right: 100px;
+}
+
+h2{
+    color: #e3c16a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+div.padrePersonajes{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 50px;
+    margin-bottom: 300px;
+}
+
+div.trailer{
+    text-align: center;
+    margin: 20px;
+}
+
+/* Finales*/
+
+h2.finales1{
+    margin: 20px 50px;
+}
+
+h2.finales2{
+    margin: 20px 50px;
+    text-align: right;
+}
+
+div.padreImagenesFinales{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px;
+}
+img.imagenes_finales{
+    width: 250px;
+}
+
+p.finales{
+    font-size: 1rem;
+}
+
+div.finales{
+    text-align: justify;
+    display: flex;
+    margin: 20px 50px;
+}
+
+/* Jugabilidad */
+
+.h2Jugabilidad{
+    margin-left: 60px;
+    margin-top: 60px;
+
+}
+
+.textoJugabilidad{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.padreImagenJugabilidad{
+    text-align: center;
+    margin: 60px;
+}
+
+.imagenJugabilidad{
+    width: 800px;
+}
+/* Recepcion */
+
+.padreImagenMetacritic{
+    text-align: center;
+}
+
+.imagenMetacritic{
+    margin: 60px;
+}
+
+.textoRecepcion{
+    margin: 60px;
+}
+
+/* FromSoftware */
+.padreImagenFromsoftware{
+    text-align: center;
+}
+.imagenFromsoftware{
+    margin: 30px;
+}
+
+.textoFromsoftware{
+    margin: 30px 60px;
+    text-align: justify;
+}
+
+.padreImagenJuegos{
+    text-align: center;
+}
+
+.imagenJuegos{
+    margin: 60px;
+}
+
+/* footer */
+
+footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    height: 40px;
+}
+
+/* mobile*/
+@media only screen and (max-width: 500px){
+    header{
+        flex-direction: column;
+    }
+    header a{
+        font-size: medium;
+        margin: 3px;
+    }
+    header img{
+        width: 55px;
+    }
+    
+}
+
+
+
+
+
+
