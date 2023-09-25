@@ -10,6 +10,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    
 }
 
 body{
@@ -33,7 +34,7 @@ header{
 }
 
 nav{
-    width: 23%;
+    width: 30%;
 }
 
 header ul{
@@ -49,22 +50,21 @@ header a{
 }
 
 header img{
-    width: 100px;
+    width: 6.25rem;
 }
 
 /* main */
 
 h1{
-    margin-top: 40px;
     text-decoration: underline;
     color: #e3c16a;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
+    margin-top: 1em;
 }
 
 
 p{
-    display: flex;
     color: #F7F7F7;
     font-size: 1.5rem;
 }
@@ -77,74 +77,104 @@ h4{
     color: #F7F7F7;
 }
 
-div.grid{
-    margin-top: 250px;
-    margin-left: 90px;
+.contenedor {
+    margin-right: 0px;
+    padding: 0px;
     display: grid;
-
-    grid-template-columns: 50% 50%;
-
-    grid-template-rows: 280px 280px ;
-
-    grid-template-areas: 
-    "texto1   portada1"
-    "texto1   portada1";
-
+    grid-gap: 1.875rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    place-items: center;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
-
 }
 
-p.gridTexto{
-    grid-area: texto1;
-}
-img.gridPortada{
-    grid-area: portada1;
-    height: 700px;
-}
-.imagen1{
-    height: 800px;
-    text-align: center;
+.contenedor .titulo{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.personajes{
-    height: 400px;
-    margin: 0px 60px;
-}
-
-.tituloPersonajes{
-    text-align: center;
-    margin-right: 100px;
-}
-
-div.padrePersonajes{
-    text-align: center;
+.contenedor .contenido{
+    grid-column: span 1;
     display: flex;
-    justify-content: space-evenly;
-    margin: 30px 50px;
-    margin-bottom: 300px;
+    margin-left: 12.5rem;
+}
+
+.contenedor .portada{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+img.portada{
+    width: 46.875rem;
+}
+
+.contenedor .monja{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+img.monja{
+    width: 93.75rem;
+}
+
+.contenedorPersonajes{
+    margin: 1.875rem;
+    padding: 1.875rem;
+    display: grid;
+    grid-gap: 5.625rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+    justify-content: center;
+    
+}
+
+.contenedorPersonajes .tituloPersonajes{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    place-items: center;
+}
+
+.contenedorPersonajes .lobo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+}
+
+.contenedorPersonajes .kuro{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+}
+
+img.personajes{
+    height: 35rem;
 }
 
 h2{
     color: #e3c16a;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 3.25rem;
+    margin-bottom: 1.25rem;
 }
 
 div.trailer{
     text-align: center;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 /* Finales*/
 
 h2.finales1{
-    margin: 20px 50px;
+    margin: 1.25rem 3.125rem;
 }
 
 h2.finales2{
-    margin: 20px 50px;
+    margin: 1.25rem 3.125rem;
     text-align: right;
 }
 
@@ -152,10 +182,10 @@ div.padreImagenesFinales{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin: 20px;
+    margin: 1.25rem;
 }
 img.imagenes_finales{
-    width: 250px;
+    width: 15.625rem;
 }
 
 p.finales{
@@ -165,31 +195,31 @@ p.finales{
 div.finales{
     text-align: justify;
     display: flex;
-    margin: 20px 50px;
+    margin: 1.25rem 3.125rem;
 }
 
 /* Jugabilidad */
 
 .h2Jugabilidad{
-    margin-left: 60px;
-    margin-top: 60px;
+    margin-left: 3.75rem;
+    margin-top: 3.75rem;
 
 }
 
 .textoJugabilidad{
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 40px;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    margin-bottom: 2.5rem;
     text-align: justify;
 }
 
 .padreImagenJugabilidad{
     text-align: center;
-    margin: 60px;
+    margin: 3.75rem;
 }
 
 .imagenJugabilidad{
-    width: 800px;
+    width: 50rem;
 }
 /* Recepcion */
 
@@ -198,11 +228,13 @@ div.finales{
 }
 
 .imagenMetacritic{
-    margin: 60px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80rem;
 }
 
 .textoRecepcion{
-    margin: 60px;
+    margin: 0rem;
 }
 
 /* FromSoftware */
@@ -210,11 +242,11 @@ div.finales{
     text-align: center;
 }
 .imagenFromsoftware{
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 .textoFromsoftware{
-    margin: 30px 60px;
+    margin: 1.875rem 3.75rem;
     text-align: justify;
 }
 
@@ -223,7 +255,7 @@ div.finales{
 }
 
 .imagenJuegos{
-    margin: 60px;
+    margin: 3.75rem;
 }
 
 /* footer */
@@ -236,21 +268,28 @@ footer{
 }
 
 footer img{
-    height: 40px;
+    height: 2.5rem;
 }
 
 /* mobile*/
-@media only screen and (max-width: 500px){
+@media screen and (max-width: 500px){
     header{
         flex-direction: column;
         
     }
+    .aparte a{
+        font-size: 12px;
+    }
     header a{
         font-size: medium;
-        margin: 3px;
+        margin: 0.1875rem;
+    }
+
+    .aparte img{
+        width: 2.8125rem;
     }
     header img{
-        width: 55px;
+        width: 3.4375rem;
     }
     /*main*/
     h1{
@@ -259,52 +298,448 @@ footer img{
     p{
         font-size: medium;
     }
-    div.grid{
-        margin: 0px;
-        grid-template-columns: 100%;
 
-        grid-template-rows: 600px;
-
-        grid-template-areas: 
-        "portada1"
-        "texto1";
-    }
-    img.gridPortada{
-        height: 400px
-    }
-    .imagen1{
-        height: 0px;
-    }
-    .tituloPersonajes{
+    .contenedor {
         margin-right: 0px;
-
+        padding: 0px;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "titulo titulo"
+                             "contenido contenido";
+        place-items: center;
+        justify-content: center;
     }
-    div.padrePersonajes{
+    
+    .contenedor .titulo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: titulo;
+    }
+    
+    .contenedor .contenido{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: contenido;
+        display: flex;
+        margin-left: 1rem;
+        margin-right: 1rem;
         text-align: center;
-        display: block;
-        margin: 0px 0px;
-        margin-bottom: 600px;
-        margin-top: 0px;
     }
-    .personajes{
-        margin-top: 100px;
-        margin-bottom: 200px;
-        height: 0px;
+    
+    .contenedor .portada{
+        grid-column-start: 0;
+        grid-column-end: 0;
+    }
+    
+    img.portada{
+        width: 0px;
+    }
+    
+    .contenedor .monja{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    img.monja{
+        width: 18.75rem;
+    }
+    .contenedorPersonajes{
+        margin: 0.625rem;
+        padding: 1.875rem;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        place-items: center;
+        justify-content: center;
+        
+    }
+    
+    .contenedorPersonajes .tituloPersonajes{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+        place-items: center;
+    }
+    
+    .contenedorPersonajes .lobo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+    }
+    
+    .contenedorPersonajes .kuro{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+    }
+    
+    img.personajes{
+        height: 0rem;
+    }
+
+    h2{
+        color: #e3c16a;
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
     }
 
     .trailerSize{
-        width: 375px;
-        height: 211px;
+        width: 16.25rem;
+        height: 8.75rem;
     }
+
+    /* Finales*/
+    h1.aparte{
+        font-size: 1.8rem;
+    }
+
+    p.aparte{
+        font-size: 0.8rem;
+    }
+
+    h2.finales1{
+        margin: 0.9375rem 2.0625rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    h2.finales2{
+        margin: 0.9375rem 2.0625rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    div.padreImagenesFinales{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0.9375rem;
+    }
+    img.imagenes_finales{
+        width: 5rem;
+    }
+
+    p.finales{
+        font-size: 0.625rem;
+    }
+
+    div.finales{
+        text-align: justify;
+        display: flex;
+        margin: 0.5625rem 1.4375rem;
+    }
+    /* Jugabilidad */
+
+    .h2Jugabilidad{
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .textoJugabilidad{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2.5rem;
+        text-align: justify;
+    }
+    
+    .padreImagenJugabilidad{
+        text-align: center;
+        margin: 0rem;
+    }
+    
+    .imagenJugabilidad{
+        width: 19rem;
+    }
+
+    /* Recepcion */
+
+    .padreImagenMetacritic{
+        text-align: center;
+    }
+
+    .imagenMetacritic{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 17rem;
+    }
+
+    .textoRecepcion{
+        margin: 0rem;
+    }
+
+    /* FromSoftware */
+     
+    .padreImagenFromsoftware{
+        text-align: center;
+    }
+    .imagenFromsoftware{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 1.875rem;
+        width: 17rem;
+    }
+
+    .textoFromsoftware{
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+        text-align: justify;
+    }
+
+    .padreImagenJuegos{
+        text-align: center;
+    }
+
+    .imagenJuegos{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 17rem;
+    }
+
+    /* footer */
     footer img{
-        height: 30px;
+        height: 1.125rem;
     }
     footer h3{
-        font-size: small;
+        font-size: x-small;
     }
     footer h4{
-        font-size: smaller;
+        font-size: xx-small;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1550px){
+    header a{
+        font-size: 1rem;
     }
 
+    .aparte img{
+        width: 80px;
+    }
 
+    nav{
+        width: 72%;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .contenedor {
+        margin-right: 0px;
+        padding: 0px;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "titulo titulo"
+                             "contenido contenido";
+        place-items: center;
+        justify-content: center;
+    }
+    
+    .contenedor .titulo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: titulo;
+    }
+    
+    .contenedor .contenido{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: contenido;
+        display: flex;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+    
+    .contenedor .portada{
+        grid-column-start: 0;
+        grid-column-end: 0;
+    }
+    
+    img.portada{
+        width: 0px;
+    }
+    
+    .contenedor .monja{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    img.monja{
+        width: 28.125rem;
+    }
+    .contenedorPersonajes{
+        margin: 0.625rem;
+        padding: 1.875rem;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        place-items: center;
+        justify-content: center;
+        
+    }
+    
+    .contenedorPersonajes .tituloPersonajes{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+        place-items: center;
+    }
+    
+    .contenedorPersonajes .lobo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+    }
+    
+    .contenedorPersonajes .kuro{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+    }
+    
+    img.personajes{
+        height: 0rem;
+    }
+    
+    h2{
+        color: #e3c16a;
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+    .trailerSize{
+        width: 24.6875rem;
+        height: 13.8125rem;
+    }
+
+    /* Finales*/
+    h1.aparte{
+        font-size: 2.3rem;
+    }
+
+    p.aparte{
+        font-size: 1rem;
+    }
+
+    h2.finales1{
+        margin: 1.25rem 3.125rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    h2.finales2{
+        margin: 1.25rem 3.125rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    div.padreImagenesFinales{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 1.25rem;
+    }
+    img.imagenes_finales{
+        width: 7.5rem;
+    }
+
+    p.finales{
+        font-size: 0.625rem;
+    }
+
+    div.finales{
+        text-align: justify;
+        display: flex;
+        margin: 0.9375rem 2.1875rem;
+    }
+
+    /* Jugabilidad */
+
+    .h2Jugabilidad{
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .textoJugabilidad{
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 2.5rem;
+        text-align: justify;
+    }
+
+    .padreImagenJugabilidad{
+        text-align: center;
+        margin: 0rem;
+    }
+
+    .imagenJugabilidad{
+        width: 29rem;
+    }
+        /* Recepcion */
+
+    .padreImagenMetacritic{
+        text-align: center;
+    }
+
+    .imagenMetacritic{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 30rem;
+    }
+
+    .textoRecepcion{
+        margin: 0rem;
+    }
+
+    /* FromSoftware */
+    .padreImagenFromsoftware{
+        text-align: center;
+    }
+    .imagenFromsoftware{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 1.875rem;
+        width: 30rem;
+    }
+
+    .textoFromsoftware{
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+        text-align: justify;
+    }
+
+    .padreImagenJuegos{
+        text-align: center;
+    }
+
+    .imagenJuegos{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 1.875rem;
+        width: 30rem;
+    }
 }
