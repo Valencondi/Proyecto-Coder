@@ -1,0 +1,418 @@
+@media screen and (max-width: 500px){
+    .aparte{
+        a{
+            font-size: 0.75rem;
+        }
+        img{
+            width: 2.8125rem;
+        }
+    }
+    header{
+        flex-direction: column;
+        img{
+            width: 3.4375rem;
+        }
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: medium;
+    }
+    .contenedor{
+        margin-right: 0px;
+        padding: 0px;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "titulo titulo"
+                             "contenido contenido";
+        place-items: center;
+        justify-content: center;
+        .titulo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-area: titulo;
+        }
+        .contenido{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-area: contenido;
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            text-align: center;
+        }
+        .portada{
+            grid-column-start: 0;
+            grid-column-end: 0;
+        }
+        .monja{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    img.portada{
+        width: 0px;
+    }
+    img.monja{
+        width: 18.75rem;
+    }
+    .contenedorPersonajes{
+        margin: 0.625rem;
+        padding: 1.875rem;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        place-items: center;
+        justify-content: center;
+        .tituloPersonajes{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-content: center;
+            place-items: center;
+        }
+        .lobo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-content: center;
+            place-items: center;
+            text-align: center;
+        }
+        .kuro{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-content: center;
+            place-items: center;
+            text-align: center;
+        }
+    }
+    img.personajes{
+        height: 0rem;
+    }
+    h2{
+        color: #e3c16a;
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+    .trailerSize{
+        width: 16.25rem;
+        height: 8.75rem;
+    }
+    h1.aparte{
+        font-size: 1.8rem;
+    }
+
+    p.aparte{
+        font-size: 0.8rem;
+    }
+
+    h2.finales1{
+        margin: 0.9375rem 2.0625rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    h2.finales2{
+        margin: 0.9375rem 2.0625rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    div.padreImagenesFinales{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0.9375rem;
+    }
+    img.imagenes_finales{
+        width: 5rem;
+    }
+
+    p.finales{
+        font-size: 0.625rem;
+    }
+
+    div.finales{
+        text-align: justify;
+        display: flex;
+        margin: 0.5625rem 1.4375rem;
+    }
+    .jugabilidad{
+        .h2{
+            margin-left: 0rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .texto{
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: justify;
+        }
+        .padreImagen{
+            text-align: center;
+            margin: 0rem;
+        }
+        .imagen{
+            width: 19rem;
+        }
+    }
+    .recepcion{
+        .padreImagen{
+            text-align: center;
+        }
+        .imagen{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 17rem;
+        }
+        .texto{
+            margin: 0rem;
+        }
+    }
+    .fromsoftware{
+        .padreImagen{
+            text-align: center;
+        }
+        .imagen{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-top: 1.875rem;
+            width: 17rem;
+        }
+        .texto{
+            margin-left: 1.3rem;
+            margin-right: 1.3rem;
+            text-align: justify;
+        }
+    }
+    .juegos{
+        .padreImagen{
+            text-align: center;
+        }
+        .imagen{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 17rem;
+        }
+    }
+    footer{
+        img{
+            height: 1.125rem;
+        }
+        h3{
+            font-size: x-small;
+        }
+        h4{
+            font-size: xx-small;
+        }
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1550px){
+    header{ 
+        a{
+            font-size: 1rem;
+        }
+        nav{
+            width: 72%;
+        }
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .contenedor {
+        margin-right: 0px;
+        padding: 0px;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "titulo titulo"
+                             "contenido contenido";
+        place-items: center;
+        justify-content: center;
+        .titulo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-area: titulo;
+        }
+        .contenido{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-area: contenido;
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            text-align: center;
+        }
+        .portada{
+            grid-column-start: 0;
+            grid-column-end: 0;
+        }
+        .monja{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    img.portada{
+        width: 0px;
+    }
+    img.monja{
+        width: 28.125rem;
+    }
+    .contenedorPersonajes{
+        margin: 0.625rem;
+        padding: 1.875rem;
+        display: grid;
+        grid-gap: 1.875rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        place-items: center;
+        justify-content: center;
+        .tituloPersonajes{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-content: center;
+            place-items: center;
+        }
+        .lobo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-content: center;
+            place-items: center;
+            text-align: center;
+        }
+        .kuro{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-content: center;
+            place-items: center;
+            text-align: center;
+        }
+    }
+    img.personajes{
+        height: 0rem;
+    }
+    
+    h2{
+        color: #e3c16a;
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+    .trailerSize{
+        width: 24.6875rem;
+        height: 13.8125rem;
+    }
+    h1.aparte{
+        font-size: 2.3rem;
+    }
+
+    p.aparte{
+        font-size: 1rem;
+    }
+
+    h2.finales1{
+        margin: 1.25rem 3.125rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    h2.finales2{
+        margin: 1.25rem 3.125rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    div.padreImagenesFinales{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 1.25rem;
+    }
+    img.imagenes_finales{
+        width: 7.5rem;
+    }
+
+    p.finales{
+        font-size: 0.625rem;
+    }
+
+    div.finales{
+        text-align: justify;
+        display: flex;
+        margin: 0.9375rem 2.1875rem;
+    }
+    .jugabilidad{
+        .h2{
+            margin-left: 0rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .texto{
+            margin-left: 4rem;
+            margin-right: 4rem;
+            margin-bottom: 2.5rem;
+            text-align: justify;
+        }
+        .padreImagen{
+            text-align: center;
+            margin: 0rem;
+        }
+        .imagen{
+            width: 29rem;
+        }
+    }
+    .recepcion{
+        .padreImagen{
+            text-align: center;
+        }
+        .imagen{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 30rem;
+        }
+        .texto{
+            margin: 0rem;
+        }
+    }
+    .fromsoftware{
+        .padreImagen{
+            text-align: center;
+        }
+        .imagen{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 1.875rem;
+            width: 30rem;
+        }
+        .texto{
+            margin-left: 1.3rem;
+            margin-right: 1.3rem;
+            text-align: justify;
+        }
+    }
+    .juegos{
+        .padreImagen{
+            text-align: center;
+        }
+        .imagen{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 1.875rem;
+            width: 30rem;
+        }
+    }
+}

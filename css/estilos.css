@@ -200,61 +200,60 @@ div.finales{
 
 /* Jugabilidad */
 
-.h2Jugabilidad{
+.jugabilidad .h2{
     margin-left: 3.75rem;
     margin-top: 3.75rem;
-
 }
 
-.textoJugabilidad{
+.jugabilidad .texto{
     margin-left: 3.75rem;
     margin-right: 3.75rem;
     margin-bottom: 2.5rem;
     text-align: justify;
 }
 
-.padreImagenJugabilidad{
+.jugabilidad .padreImagen{
     text-align: center;
     margin: 3.75rem;
 }
 
-.imagenJugabilidad{
+.jugabilidad .imagen{
     width: 50rem;
 }
 /* Recepcion */
 
-.padreImagenMetacritic{
+.recepcion .padreImagen{
     text-align: center;
 }
 
-.imagenMetacritic{
+.recepcion .imagen{
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 80rem;
 }
 
-.textoRecepcion{
+.recepcion .texto{
     margin: 0rem;
 }
 
 /* FromSoftware */
-.padreImagenFromsoftware{
+.fromsoftware .padreImagen{
     text-align: center;
 }
-.imagenFromsoftware{
+.fromsoftware .imagen{
     margin: 1.875rem;
 }
 
-.textoFromsoftware{
+.fromsoftware .texto{
     margin: 1.875rem 3.75rem;
     text-align: justify;
 }
 
-.padreImagenJuegos{
+.juegos .padreImagen{
     text-align: center;
 }
 
-.imagenJuegos{
+.juegos .imagen{
     margin: 3.75rem;
 }
 
@@ -278,7 +277,7 @@ footer img{
         
     }
     .aparte a{
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     header a{
         font-size: medium;
@@ -299,7 +298,7 @@ footer img{
         font-size: medium;
     }
 
-    .contenedor {
+    .contenedor{
         margin-right: 0px;
         padding: 0px;
         display: grid;
@@ -437,7 +436,7 @@ footer img{
     }
     /* Jugabilidad */
 
-    .h2Jugabilidad{
+    .jugabilidad .h2{
         margin-left: 0rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -445,44 +444,44 @@ footer img{
         font-size: 1.2rem;
     }
     
-    .textoJugabilidad{
+    .jugabilidad .texto{
         margin-left: 2rem;
         margin-right: 2rem;
         margin-bottom: 2.5rem;
         text-align: justify;
     }
     
-    .padreImagenJugabilidad{
+    .jugabilidad .padreImagen{
         text-align: center;
         margin: 0rem;
     }
     
-    .imagenJugabilidad{
+    .jugabilidad .imagen{
         width: 19rem;
     }
 
     /* Recepcion */
 
-    .padreImagenMetacritic{
+    .recepcion .padreImagen{
         text-align: center;
     }
 
-    .imagenMetacritic{
+    .recepcion .imagen{
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 17rem;
     }
 
-    .textoRecepcion{
+    .recepcion .texto{
         margin: 0rem;
     }
 
     /* FromSoftware */
      
-    .padreImagenFromsoftware{
+    .fromsoftware .padreImagen{
         text-align: center;
     }
-    .imagenFromsoftware{
+    .fromsoftware .imagen{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 0px;
@@ -490,17 +489,17 @@ footer img{
         width: 17rem;
     }
 
-    .textoFromsoftware{
+    .fromsoftware .texto{
         margin-left: 1.3rem;
         margin-right: 1.3rem;
         text-align: justify;
     }
 
-    .padreImagenJuegos{
+    .juegos .padreImagen{
         text-align: center;
     }
 
-    .imagenJuegos{
+    .juegos .imagen{
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 1rem;
@@ -676,7 +675,7 @@ footer img{
 
     /* Jugabilidad */
 
-    .h2Jugabilidad{
+    .jugabilidad .h2{
         margin-left: 0rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -684,59 +683,59 @@ footer img{
         font-size: 2rem;
     }
 
-    .textoJugabilidad{
+    .jugabilidad .texto{
         margin-left: 4rem;
         margin-right: 4rem;
         margin-bottom: 2.5rem;
         text-align: justify;
     }
 
-    .padreImagenJugabilidad{
+    .jugabilidad .padreImagen{
         text-align: center;
         margin: 0rem;
     }
 
-    .imagenJugabilidad{
+    .jugabilidad .imagen{
         width: 29rem;
     }
-        /* Recepcion */
+    /* Recepcion */
 
-    .padreImagenMetacritic{
+    .recepcion .padreImagen{
         text-align: center;
     }
 
-    .imagenMetacritic{
+    .recepcion .imagen{
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 30rem;
     }
 
-    .textoRecepcion{
+    .recepcion .texto{
         margin: 0rem;
     }
 
     /* FromSoftware */
-    .padreImagenFromsoftware{
+    .fromsoftware .padreImagen{
         text-align: center;
     }
-    .imagenFromsoftware{
+    .fromsoftware .imagen{
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 1.875rem;
         width: 30rem;
     }
 
-    .textoFromsoftware{
+    .fromsoftware .texto{
         margin-left: 1.3rem;
         margin-right: 1.3rem;
         text-align: justify;
     }
 
-    .padreImagenJuegos{
+    .juegos .padreImagen{
         text-align: center;
     }
 
-    .imagenJuegos{
+    .juegos .imagen{
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 1.875rem;
