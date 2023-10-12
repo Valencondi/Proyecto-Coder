@@ -27,6 +27,26 @@ header{
         color: #F7F7F7;
         text-decoration: none;
     }
+        .link{
+            text-decoration: none;
+            position: relative;
+            padding: 10px;
+        }
+        .link::after{
+            content: "";
+            width: 0;
+            height: 4px;
+            background-color: #e3c16a;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transition: all .5s;
+            will-change: width;
+        }
+        .link:hover:after{
+            width: 100%;
+            right: 0;
+        }
     img{
         width: 6.25rem;
     }

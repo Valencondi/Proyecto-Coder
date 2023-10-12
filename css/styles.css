@@ -28,6 +28,26 @@ header a {
   color: #F7F7F7;
   text-decoration: none;
 }
+header .link {
+  text-decoration: none;
+  position: relative;
+  padding: 10px;
+}
+header .link::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #e3c16a;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+header .link:hover:after {
+  width: 100%;
+  right: 0;
+}
 header img {
   width: 6.25rem;
 }
@@ -42,7 +62,7 @@ h1 {
 
 p {
   color: #F7F7F7;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h3 {
