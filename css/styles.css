@@ -252,6 +252,27 @@ footer img {
   header img {
     width: 3.4375rem;
   }
+  header .link {
+    text-decoration: none;
+    position: inherit;
+    padding: 2px;
+    padding-bottom: 0px;
+  }
+  header .link::after {
+    content: "";
+    width: 0;
+    height: 0px;
+    background-color: #e3c16a;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  header .link:hover:after {
+    width: 0%;
+    right: 0;
+  }
   h1 {
     font-size: 2rem;
   }

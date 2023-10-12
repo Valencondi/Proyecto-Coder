@@ -12,6 +12,27 @@
         img{
             width: 3.4375rem;
         }
+        .link{
+            text-decoration: none;
+            position: inherit;
+            padding: 2px;
+            padding-bottom: 0px;
+        }
+        .link::after{
+            content: "";
+            width: 0;
+            height: 0px;
+            background-color: #e3c16a;
+            position: absolute;
+            bottom: 0;
+            right: 25%;
+            transition: all .5s;
+            will-change: width;
+        }
+        .link:hover:after{
+            width: 0%;
+            right: 0;
+        }
     }
     h1{
         font-size: 2rem;
